@@ -105,7 +105,13 @@ export default function App() {
 
   return (
     <div style={{ padding: "2rem", maxWidth: "800px", margin: "auto", fontFamily: "Segoe UI, sans-serif", backgroundColor: "#f9f9fb", color: "#333" }}>
-      <h1 style={{ textAlign: "center", color: "#3366cc" }}>🧹 Haushaltsaufgaben</h1>
+      <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+          <img src="/Logo_HouseHero.png" alt="HouseHero Logo" width="60" height="60" />
+          <div>
+            <h1 style={{ margin: 0, color: "#3366cc" }}>HouseHero</h1>
+            <p style={{ margin: 0, fontSize: "0.9rem", color: "#777" }}>Deine App für heldenhafte Haushaltsaufgaben</p>
+          </div>
+        </div>
 
       {!isAuthenticated && (
         <div style={{ textAlign: "center", margin: "1.5rem 0" }}>
